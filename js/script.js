@@ -71,14 +71,14 @@ const CUR_INFO = [
     },
     {
         alt: 'litecoin',
-        titleName: 'Litecoin (LTC)',
+        titleName: 'Litecoin (LTC):',
         imgPath: 'img/litecoin.svg',
         minAmount: 0.51085875,
         maxAmount: 10.21717501,
     },
     {
         alt: 'solana',
-        titleName: 'Solana (SOL)',
+        titleName: 'Solana (SOL):',
         imgPath: 'img/solana.svg',
         minAmount: 0.51812993,
         maxAmount: 10.36048745,
@@ -92,14 +92,14 @@ const CUR_INFO = [
     },
     {
         alt: 'avalanche',
-        titleName: 'Avalanche (AVAX)',
+        titleName: 'Avalanche (AVAX):',
         imgPath: 'img/avalanche.svg',
         minAmount: 0.92187648,
         maxAmount: 18.43752956,
     },
     {
         alt: 'polkadot',
-        titleName: 'Polkadot (DOT)',
+        titleName: 'Polkadot (DOT):',
         imgPath: 'img/polkadot.svg',
         minAmount: 2.79994660,
         maxAmount: 56.10799445,
@@ -178,7 +178,7 @@ function getCurrentTime() {
 // * OUTPUT FUNC
 
 function getTableFragment(
-    date, time, name, imgPath, titleName, alt, investAmount
+    date, time, name, imgPath, alt, titleName, investAmount
 ) {
     return `<tr class="transaction-table__item">
                 <td class="transaction-table__item-date">
@@ -230,7 +230,7 @@ function getOperations(curArray, usernameArr, hidenameArr, outputTable) {
 
         outputTable.appendChild(tableItem);
 
-        // * Удаление ячейки при достижении нужного lenght
+        // * Deleting cell when it reaches the desired length
 
         if (outputTable.childNodes.length > 20) {
             outputTable.removeChild(outputTable.firstChild);
@@ -249,5 +249,4 @@ if (operTable.childNodes.length < 20) {
 let randomNum2 = Math.random() * 10000;
 setInterval(() => {
     getOperations(CUR_INFO, usernames, stars, operTable);
-}, randomNum2
-);
+}, randomNum2);

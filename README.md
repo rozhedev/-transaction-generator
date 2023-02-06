@@ -1,7 +1,15 @@
-Через случайный промежуток времени должнен выводится ряд таблицы.
-Ряд содержит в себе несколько ячеек с данными а именно:
+# Transaction generator
 
-1. Дата (исп. new Date.now() и выводишь у формате Nov-25-2021 10:48:39 AM)
-2. Юзернейм пользователя (состоит из цифр, лат. букв разн. регистра);
-3. Сумма инвестиции (или сумма вывода). Генерируются исходя из лимитов;
-4. Иконка валюты и название. Берётся случайный путь к картинке и соотв. надпись (находятся в одном объекте).
+How it works?
+
+After a random period of time a row of the table should be output.
+The row contains several cells with data such as:
+
+1. Date (in format Nov-25-2021 10:48:39 AM)
+2. Username (сonsists of numbers and letters of different case);
+3. Amount (generated based on limits);
+4. Currency icon & name. Takes a random path to the picture and the corresponding title.
+
+## Demo
+
+![demo](blob/demo.gif)

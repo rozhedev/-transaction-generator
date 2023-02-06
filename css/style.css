@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   outline: none;
   border: none;
@@ -19,7 +18,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -37,8 +36,7 @@ input[type="number"] {
 
 .transaction-table {
   table-layout: fixed;
-  width: 70%;
-  max-width: 680px;
+  max-width: 760px;
   margin: 40px auto 0;
   border-collapse: collapse;
   border-radius: 24px;
@@ -47,67 +45,49 @@ input[type="number"] {
   letter-spacing: 0.02em;
   text-align: center;
 }
-
 .transaction-table__header {
   font-size: 20px;
   letter-spacing: 0.04em;
 }
-
 .transaction-table__header tr :nth-child(1) {
   width: 23%;
 }
-
 .transaction-table__header tr :nth-child(2) {
   width: 23%;
 }
-
 .transaction-table__header tr :nth-child(3) {
   width: 33%;
 }
-
 .transaction-table__header tr :nth-child(4) {
   width: 21%;
 }
-
 .transaction-table th {
   padding: 24px;
 }
-
 .transaction-table td {
   padding: 12px 24px;
 }
-
 .transaction-table__item:nth-child(odd) {
   background-color: #efefef;
 }
-
 .transaction-table__item:last-child td {
   padding: 24px;
 }
-
 .transaction-table__item-date div:last-child {
   margin-top: 6px;
 }
-
 .transaction-table__item-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   min-height: 89px;
 }
-
 .transaction-table__item-img {
   width: 26px;
 }
-
 .transaction-table__item-title {
   margin-left: 10px;
   font-size: 17px;
 }
-
 .transaction-table__item-amount {
   font-weight: 700;
 }
