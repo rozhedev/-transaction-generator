@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+$accent: #655faf;
+$errorRed: #912a10;
+$successGreen: #0e833b;
+$dark: #111;
+$light: #f9f9f9;
+$transition: 0.6s all;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: $dark;
+    color: $dark;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 64px auto 0;
+}
+
+.title {
+    color: $light;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.transaction-table {
+    table-layout: fixed;
+    width: 70%;
+    max-width: 680px;
+    margin: 40px auto 0;
+
+    border-collapse: collapse;
+    border-radius: 24px;
+    background-color: $light;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    &__header {
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        
+        tr {
+            :nth-child(1) {
+                width: 23%;
+            }
+            :nth-child(2) {
+                width: 23%;
+            }
+            :nth-child(3) {
+                width: 33%;
+            }
+            :nth-child(4) {
+                width: 21%;
+            }
+        }
+    }
+    th {
+        padding: 24px; 
+    }
+    td {
+        padding: 12px 24px;
+    }
+    &__item { 
+        &:nth-child(odd) {
+            background-color: #efefef;
+        }
+        &:last-child {
+            td {
+                padding: 24px;
+            }
+        }
+        
+        &-date {
+            div {
+                &:last-child {
+                    margin-top: 6px;
+                }
+            }
+        }
+        &-content {
+            display: flex;
+            align-items: center;
+            min-height: 89px;
+        }
+        &-img {
+            width: 26px;
+        }
+        &-title {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        &-amount {
+            font-weight: 700;
+        }
+    }
+}
+
+// * Info
+
+.info {
+    margin: 64px auto 40px;
+    width: 70%;
+    max-width: 680px;
+    background-color: $light;
+    padding: 16px 48px;
+    border-radius: 16px;
+}
